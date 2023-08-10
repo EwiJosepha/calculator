@@ -1,27 +1,31 @@
-* {
-  /* padding: 0; */
-  margin: 0;
-}
-
 .container-wrapper {
   display: flex;
   flex-direction: column;
-  background-color: #000;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #7fffe0 35%, #000 50%);
   color: #fff;
+  margin: 0 auto;
   border: 2px solid #a9a9a9;
   border-radius: 10px;
-  margin-left: 10px;
   width: 220px;
-  padding: 30px;
+  padding: 10px 10px;
   height: 500px;
-
 }
 
 .calculator {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  
+}
+
+#roundc {
+  background-color: #ff00ff;
+  border-radius: 50%;
+  padding: 15px;
+  border: none;
+}
+
+#roundc:hover {
+  background-color: #7fff00;
 }
 
 .upper-section legend {
@@ -29,55 +33,61 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 18px;
+  color: #000;
   font-weight: 600px;
 }
 
-.buttons-section{
-  padding: 30px;
-  border: 2px solid #a9a9a9;
-  width: 220px;
+.buttons-section {
+  padding: 8px 5px;
+  width: 200px;
 }
 
 .space-for-output {
   display: flex;
   flex-direction: column;
-  width: 200px;
-  height: 100px;
+  width: 180px;
+  height: 130px;
+  margin: 0 auto;
   border-radius: 10px;
   border: 2px solid #d3d3d3;
   background-color: #d3d3d3;
-  padding: 10px;
-  
-}
-
-.row-one #round {
-  border-radius: 50%;
-  padding: 10px 10px;
-  border: none;
+  padding: 5px 5px;
 }
 
 .row-one {
+  display: flex;
+  gap: 15px;
   padding: 10px 10px;
 }
 
 #square {
   border: none;
+  border-radius: 5px;
   text-decoration: none;
-  padding: 10px 35px;
+  padding: 15px;
+}
+
+#squares {
+  padding: 15px;
+  border-radius: 5px;
 }
 
 #squareb {
-  background-color: #0000ff;
+  background-color: #ffa500;
   color: #fff;
-  border: 2px solid #0000ff;
+  border: 2px solid #ffa500;
   border-radius: 5px;
+  padding: 15px;
   text-decoration: none;
-  padding: 10px 10px;
+}
+
+#squareb:hover {
+  background-color: #7fff00;
 }
 
 .round {
+  padding: 15px;
   border-radius: 50%;
-  padding: 10px 10px;
   border: none;
 }
