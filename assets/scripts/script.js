@@ -15,7 +15,6 @@ let output = document.getElementById('output')
 let result;
 let calculation=[]
 addition.addEventListener('click', function  additionn () {
-
   let addition = document.getElementById('addition').innerHTML
   let secadd = addition.split()
   calculation.push(secadd) 
@@ -24,7 +23,6 @@ addition.addEventListener('click', function  additionn () {
 })
 
 subtraction.addEventListener('click', function  suntactionn () {
-
   let subtraction = document.getElementById('subtraction').innerHTML
   let secsub = subtraction.split()
   calculation.push(secsub) 
@@ -32,7 +30,6 @@ subtraction.addEventListener('click', function  suntactionn () {
   output.innerHTML = result
 })
 multiplication.addEventListener('click', function  multiplicationn () {
-
   let multiplication = document.getElementById('multiplication').innerHTML
   let secMultiplication = multiplication.split()
   calculation.push(secMultiplication) 
@@ -40,15 +37,20 @@ multiplication.addEventListener('click', function  multiplicationn () {
   output.innerHTML = result
 })
 division.addEventListener('click', function divisionn () {
-
   let division = document.getElementById('division').innerHTML
   let secdivisiontion = division.split()
   calculation.push(secdivisiontion) 
   result = calculation.join('')
   output.innerHTML = result
 })
+// plusminus.addEventListener('click', function plusMinus () {
+//   let plusminus = document.getElementById('plus-minus').innerHTML
+//   let secplus = plusminus.split()
+//   calculation.push(secplus) 
+//   result = calculation.join('')
+//   output.innerHTML = result
+// })
 percentage.addEventListener('click', function percentagee () {
-
   let percentage = document.getElementById('percentage').innerHTML
   let secpercentage = percentage.split()
   calculation.push(secpercentage) 
@@ -56,7 +58,6 @@ percentage.addEventListener('click', function percentagee () {
   output.innerHTML = result
 })
 dot.addEventListener('click', function dott () {
-
   let dot = document.getElementById('dot').innerHTML
   let secdot = dot.split()
   calculation.push(secdot) 
