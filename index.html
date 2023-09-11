@@ -9,17 +9,19 @@
 </head>
 
 <body>
+  <section class="main">
   <div class="container-wrapper">
     <div class="clock">
       <span>10:53</span>
     </div>
     <div class="space-for-output" id="output">
+      <textarea placeholder="."></textarea>
     </div>
     <div class="buttons">
       <div class="first-class">
         <button id="clear">AC</button>
         <button id="percentage">%</button>
-        <button>%</button>
+        <button id="plus-minus">+/-</button>
         <button id="division">/</button>
       </div>
       <div class="second-class">
@@ -40,15 +42,14 @@
         <button id="third">3</button>
         <button id="addition">+</button>
       </div>
-      <div class="fifth-class">
+      <div class="fifth-class" id="last">
         <button id="zero">0</button>
         <button id="dot">.</button>
         <button id="equal">=</button>
       </div>
     </div>
-
-
-  </div>
+</div>
+</section>
   <script src="assets/scripts/script.js"></script>
 </body>
 
