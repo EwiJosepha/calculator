@@ -17,6 +17,7 @@
 .clock {
   color: #A5A5A5;
   font-family: sans-serif;
+  margin-left: -130px;
 }
 
 .container-wrapper {
@@ -51,7 +52,7 @@
 .forth-class,
 .fifth-class {
   width: 100%;
-  height: 50%;
+  height: 60%;
   background-color: #000;
 }
 

@@ -14,20 +14,11 @@ let output = document.getElementById('output')
 
 let result;
 let calculation=[]
-addition.addEventListener('click', function  additionn () {
-  let addition = document.getElementById('addition').innerHTML
-  let secadd = addition.split()
-  calculation.push(secadd) 
-  result = calculation.join('')
-  output.innerHTML = result
-})
-
-subtraction.addEventListener('click', function  suntactionn () {
-  let subtraction = document.getElementById('subtraction').innerHTML
-  let secsub = subtraction.split()
-  calculation.push(secsub) 
-  result = calculation.join('')
-  output.innerHTML = result
+equal.addEventListener('click', function  equall () {
+  let equal = document.getElementById('equal').innerHTML
+  eval(result)
+  output.textContent = eval(result)
+  console.log(result)
 })
 multiplication.addEventListener('click', function  multiplicationn () {
   let multiplication = document.getElementById('multiplication').innerHTML
@@ -36,6 +27,22 @@ multiplication.addEventListener('click', function  multiplicationn () {
   result = calculation.join('')
   output.innerHTML = result
 })
+addition.addEventListener('click', function  additionn () {
+  let addition = document.getElementById('addition').innerHTML
+  let secadd = addition.split()
+  calculation.push(secadd) 
+  result = calculation.join('')
+  output.innerHTML = result
+})
+
+subtraction.addEventListener('click', function  subtractionn () {
+  let subtraction = document.getElementById('subtraction').innerHTML
+  let secsub = subtraction.split()
+  calculation.push(secsub) 
+  result = calculation.join('')
+  output.innerHTML = result
+})
+
 division.addEventListener('click', function divisionn () {
   let division = document.getElementById('division').innerHTML
   let secdivisiontion = division.split()
@@ -57,19 +64,13 @@ percentage.addEventListener('click', function percentagee () {
   result = calculation.join('')
   output.innerHTML = result
 })
+
 dot.addEventListener('click', function dott () {
   let dot = document.getElementById('dot').innerHTML
   let secdot = dot.split()
   calculation.push(secdot) 
   result = calculation.join('')
   output.innerHTML = result
-})
-
-equal.addEventListener('click', function  equall () {
-  let equal = document.getElementById('equal').innerHTML
-  eval(result)
-  output.textContent = eval(result)
-  console.log(result)
 })
 
 clear.addEventListener('click', function deleted() {
@@ -98,6 +99,7 @@ number.addEventListener('click', function seven() {
   // calculation.join()
   output.innerText = result
   console.log(result)
+  console.log(calculation)
  } )
 
 numbers.addEventListener('click', function eight() {
