@@ -1,88 +1,71 @@
 let output = document.getElementById('output')
-// let subtraction = document.getElementById('subtraction')
-// let multiplication = document.getElementById('multiplication')
-// let percentage = document.getElementById('percentage')
-// let division = document.getElementById('division')
-// let equal = document.getElementById('equal')
-// let buttons = document.querySelectorAll('.bloc button').innerHTML
-
-// function additionn () {
-//   let newadd= addition.split()
-//   newadd = calculation + calculation
-//   console.log(calculation)
-// }
-
 let result;
-let calculation=[]
-equal.addEventListener('click', function  equall () {
+let calculation = []
+
+equal.addEventListener('click', function equall() {
   let equal = document.getElementById('equal').innerHTML
   eval(result)
   output.textContent = eval(result)
-  console.log(result)
 })
-multiplication.addEventListener('click', function  multiplicationn () {
+
+multiplication.addEventListener('click', function multiplicationn() {
   let multiplication = document.getElementById('multiplication').innerHTML
   let secMultiplication = multiplication.split()
-  calculation.push(secMultiplication) 
+  calculation.push(secMultiplication)
   result = calculation.join('')
   output.innerHTML = result
 })
-addition.addEventListener('click', function  additionn () {
+
+addition.addEventListener('click', function additionn() {
   let addition = document.getElementById('addition').innerHTML
   let secadd = addition.split()
-  calculation.push(secadd) 
+  calculation.push(secadd)
   result = calculation.join('')
   output.innerHTML = result
 })
 
-subtraction.addEventListener('click', function  subtractionn () {
+subtraction.addEventListener('click', function subtractionn() {
   let subtraction = document.getElementById('subtraction').innerHTML
   let secsub = subtraction.split()
-  calculation.push(secsub) 
+  calculation.push(secsub)
   result = calculation.join('')
   output.innerHTML = result
 })
 
-division.addEventListener('click', function divisionn () {
+division.addEventListener('click', function divisionn() {
   let division = document.getElementById('division').innerHTML
   let secdivisiontion = division.split()
-  calculation.push(secdivisiontion) 
-  result = calculation.join('')
-  output.innerHTML = result
-})
-// plusminus.addEventListener('click', function plusMinus () {
-//   let plusminus = document.getElementById('plus-minus').innerHTML
-//   let secplus = plusminus.split()
-//   calculation.push(secplus) 
-//   result = calculation.join('')
-//   output.innerHTML = result
-// })
-percentage.addEventListener('click', function percentagee () {
-  let percentage = document.getElementById('percentage').innerHTML
-  let secpercentage = percentage.split()
-  calculation.push(secpercentage) 
+  calculation.push(secdivisiontion)
   result = calculation.join('')
   output.innerHTML = result
 })
 
-dot.addEventListener('click', function dott () {
+percentage.addEventListener('click', function percentagee() {
+  let percentage = document.getElementById('percentage').innerHTML
+  let secpercentage = percentage.split()
+  calculation.push(secpercentage)
+  result = calculation.join('')
+  output.innerHTML = result
+})
+
+dot.addEventListener('click', function dott() {
   let dot = document.getElementById('dot').innerHTML
   let secdot = dot.split()
-  calculation.push(secdot) 
+  calculation.push(secdot)
   result = calculation.join('')
   output.innerHTML = result
 })
 
 clear.addEventListener('click', function deleted() {
-let clear = document.getElementById('clear')
-calculation=[]
-result = " "
-output.innerHTML = result
-console.log(result)
+  let clear = document.getElementById('clear')
+  calculation = []
+  result = " "
+  output.innerHTML = result
+  console.log(result)
 
 })
 
-num.addEventListener('click', function nine(){
+num.addEventListener('click', function nine() {
   let num9 = document.getElementById('num').innerHTML
   let neww = num9.split('')
   calculation.push(neww)
@@ -96,11 +79,10 @@ number.addEventListener('click', function seven() {
   let new7 = number.split("")
   calculation.push(new7)
   result = calculation.join('')
-  // calculation.join()
   output.innerText = result
   console.log(result)
   console.log(calculation)
- } )
+})
 
 numbers.addEventListener('click', function eight() {
   let numbers = document.getElementById('numbers').innerHTML
@@ -151,10 +133,10 @@ first.addEventListener('click', function one() {
   let first = document.getElementById('first').innerHTML
   let new1 = first.split('')
   calculation.push(new1)
-  result=calculation.join('')
+  result = calculation.join('')
   output.innerText = result
 })
-zero.addEventListener('click', function nut () {
+zero.addEventListener('click', function nut() {
   let zero = document.getElementById('zero').innerHTML
   let new0 = zero.split('')
   calculation.push(new0)
