@@ -63,14 +63,14 @@ button {
   color: #fff;
   padding: 1.5px;
   cursor: pointer;
-  background-color: #343434;
+  background-color: #3a3636;
   border: none;
 }
 
 #clear,
 #percentage,
 #plus-minus {
-  background-color: #A5A5A5;
+  background-color: #a69f9f;
   color: #000;
   border: none;
 }
@@ -79,7 +79,7 @@ button {
 #addition,
 #subtraction,
 #multiplication {
-  background-color: #FF9F0A;
+  background-color: #dd8b11;
   border: none;
 }
 
@@ -92,4 +92,3 @@ button {
   width: 120px;
   border: none;
 }
-
